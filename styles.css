@@ -1,0 +1,296 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #F2F2F2;
+}
+
+.mainContainer {
+    position: relative;
+    width: 1440px;
+    height: 800px;
+    margin: auto;
+    /* border: solid red 1px; */
+    background-color: #FFFFFF;
+}
+
+#pattern {
+    position: absolute;
+    top:50px;
+    left: 670px;
+}
+
+#curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#quotes {
+    position: absolute;
+    top: 214px;
+    left: 260px;
+}
+
+.mainContainer__iconContainer {
+    position: absolute;
+    z-index: 2;
+    height: 56px;
+    width: 112px;
+    left: 797px;
+    top: 625px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 15px 20px -10px rgba(36, 36, 113, 0.0991313);
+    border-radius: 28px;
+}
+
+#prev {
+    position: relative;
+    z-index: 3;
+    width: 8px;
+    height: 16px;
+    top: 20px;
+    left: 24px;
+}
+#prev:hover{
+    background-color: orange;
+}
+
+#next {
+    position: relative;
+    z-index: 3;
+    width: 8px;
+    height: 16px;
+    top: 20px;
+    left: 72px;
+}
+
+#next:hover {
+    background-color: orange;
+}
+
+.mainContainer__textContainer {
+    position: relative;
+    z-index: 2;
+    width: 635px;
+    height: 354px;
+    left: 165px;
+    top: 214px;
+    /* border: solid 1px red; */
+}
+
+.mainContainer__textContainer--John {
+    position: relative;
+    z-index: 2;
+    width: 635px;
+    height: 354px;
+    left: 100px;
+    top: 214px;
+    /* border: solid 1px red; */
+}
+
+.textContainer--large {
+    position: relative;
+    top: 48px;
+    text-align: left;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 44px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 32px;
+    color: #202047;
+}
+
+
+
+.textContainer__name, .textContainer__position {
+    display: inline-block;
+}
+
+.textContainer__name{
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #202047;
+}
+
+.textContainer__position {
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #B9B9CE;
+    margin-left: 10px;
+}
+
+.mainContainer__imgContainer--Tanya {
+    position: absolute;
+    width: 540px;
+    height: 540px;
+    top: 113px;
+    left: 735px;
+    background-image: url('images/image-tanya.jpg');
+    background-repeat: no-repeat;
+    box-shadow: 0px 15px 20px -10px rgba(36, 36, 113, 0.0991313);
+}
+
+.mainContainer__imgContainer--John {
+    position: absolute;
+    width: 540px;
+    height: 540px;
+    top: 113px;
+    left: 735px;
+    background-image: url('images/image-john.jpg');
+    background-repeat: no-repeat;
+    box-shadow: 0px 15px 20px -10px rgba(36, 36, 113, 0.0991313);
+}
+
+@media only screen and (max-width: 600px){
+    .mainContainer {
+        width: 375px;
+        height: 667px;
+    }
+
+    #pattern {
+        position: absolute;
+        top:24px;
+        left: 24px;
+        width: 327px;
+        height: 308px;
+    }
+    
+    #curve {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 285px;
+        height: 72px;
+    }
+    
+    #quotes {
+        position: absolute;
+        top: 364px;
+        left: 158px;
+        width: 60px;
+        height: 50px;
+    }
+
+    .mainContainer__iconContainer {
+        width: 80px;
+        height: 40px;
+        left: 148px;
+        top: 287px;
+    }
+
+    #prev {
+        width: 5.71px;
+        height: 11.43px;
+        top: 14.29px;
+        left: 17.14px;
+    }
+    #next {
+        width: 5.71px;
+        height: 11.43px;
+        top: 14.29px;
+        left: 51.3px;
+    }
+
+    #prev:hover{
+        background-color: orange;
+    }
+    #next:hover {
+        background-color: orange;
+    }
+
+    .mainContainer__textContainer {
+        position: relative;
+        z-index: 2;
+        width: 311px;
+        height: 228px;
+        left: 32px;
+        top: 364px;
+        /* border: solid 1px red; */
+    }
+
+    .mainContainer__textContainer--John {
+        position: relative;
+        z-index: 2;
+        width: 311px;
+        height: 228px;
+        left: 32px;
+        top: 364px;
+        /* border: solid 1px red; */
+    }
+
+    .textContainer--large {
+        
+        top: 25px;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #202047;
+    }
+
+    .textContainer__name, .textContainer__position {
+        display: block;
+        text-align: center;
+    }
+
+    .textContainer__name{
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0px;
+        color: #202047;
+    }
+
+    .textContainer__position {
+        font-family: 'Inter';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #B9B9CE;
+    }
+
+    .mainContainer__imgContainer--Tanya {
+        
+        width: 254px;
+        height: 253px;
+        top: 54px;
+        left: 61px;
+        background-image: url('images/image-tanya.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        box-shadow: 0px 15px 20px -10px rgba(36, 36, 113, 0.0991313);
+    }
+
+    .mainContainer__imgContainer--John {
+       
+        width: 254px;
+        height: 253px;
+        top: 54px;
+        left: 61px;
+        background-image: url('images/image-john.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        box-shadow: 0px 15px 20px -10px rgba(36, 36, 113, 0.0991313);
+    }
+}
