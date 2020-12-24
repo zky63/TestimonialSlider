@@ -5,12 +5,6 @@ const names = document.querySelector('#names');
 const picture = document.querySelector('#picture');
 const textContainer = document.querySelector('#textContainer');
 
-console.log(prev)
-console.log(next)
-console.log(text)
-console.log(names)
-console.log(position)
-console.log(picture)
 
 prev.addEventListener('click', toPrev);
 next.addEventListener('click', toNext);
